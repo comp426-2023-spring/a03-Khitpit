@@ -1,0 +1,26 @@
+{
+  "name": "node-rpsls",
+  "version": "1.0.0",
+  "description": "Rock Paper Scissors+",
+  "main": "./lib/rpsls.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/comp426-2023-spring/a03-Khitpit.git"
+  },
+  "author": "Khitpit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a03-Khitpit/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a03-Khitpit#readme",
+  "bin": {
+    "node-rps": "./bin/rps-cli.js",
+    "node-rpsls": "./bin/rpsls-cli.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}

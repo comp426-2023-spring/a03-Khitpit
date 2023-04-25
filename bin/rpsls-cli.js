@@ -5,7 +5,7 @@ import { rps } from '../lib/rpsls.js'
 const cliArgs = minimist(process.argv.slice(2))
 
 function printRules() {
-    console.log("Rules for the Lizard-Spock Expansion of Rock Paper Scissors:\n\n  - Scissors CUTS Paper\n- Paper COVERS Rock\n- Rock SMOOSHES Lizard\n- Lizard POISONS Spock\n- Spock SMASHES Scissors\n- Scissors DECAPITATES Lizard\n- Lizard EATS Paper\n- Paper DISPROVES Spock\n- Spock VAPORIZES Rock\n- Rock CRUSHES Scissors\n")
+    console.log("Rules for the Lizard-Spock Expansion of Rock Paper Scissors:\n\n- Scissors CUTS Paper\n- Paper COVERS Rock\n- Rock SMOOSHES Lizard\n- Lizard POISONS Spock\n- Spock SMASHES Scissors\n- Scissors DECAPITATES Lizard\n- Lizard EATS Paper\n- Paper DISPROVES Spock\n- Spock VAPORIZES Rock\n- Rock CRUSHES Scissors\n")
 }
 
 if (!(cliArgs.h == undefined && cliArgs.help == undefined)) {
@@ -20,7 +20,7 @@ if (!(cliArgs.r == undefined && cliArgs.rules == undefined)) {
 
 let hand = cliArgs._[0];
 try {
-	result = rps(hand);
+	let result = rps(hand);
 	console.log(JSON.stringify(result));
 } catch (e) {
 	console.log('Invalid entry!\n\n');

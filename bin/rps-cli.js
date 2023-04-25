@@ -16,7 +16,7 @@ if (!(cliArgs.r == undefined && cliArgs.rules == undefined)) {
 
 let hand = cliArgs._[0];
 try {
-	result = rps(move);
+	let result = rps(hand);
 	console.log(JSON.stringify(result));
 } catch (e) {
 	console.log('Invalid entry!\n\n');

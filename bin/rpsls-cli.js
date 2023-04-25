@@ -10,14 +10,13 @@ if (!(cliArgs.h == undefined && cliArgs.help == undefined)) {
 }
 
 if (!(cliArgs.r == undefined && cliArgs.rules == undefined)) {
-
     console.log("Rules for the Lizard-Spock Expansion of Rock Paper Scissors:\n\n  - Scissors CUTS Paper\n- Paper COVERS Rock\n- Rock SMOOSHES Lizard\n- Lizard POISONS Spock\n- Spock SMASHES Scissors\n- Scissors DECAPITATES Lizard\n- Lizard EATS Paper\n- Paper DISPROVES Spock\n- Spock VAPORIZES Rock\n- Rock CRUSHES Scissors\n")
     process.exit(0)
 }
 
 let hand = cliArgs._[0];
 try {
-	result = rps(move);
+	result = rps(hand);
 	console.log(JSON.stringify(result));
 } catch (e) {
 	console.log('Invalid entry!\n\n');

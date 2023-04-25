@@ -24,5 +24,6 @@ try {
 	console.log(JSON.stringify(result));
 } catch (e) {
 	console.log('Invalid entry!\n\n');
+    printRules()
 	process.exit(0);
 }
